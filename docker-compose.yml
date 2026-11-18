@@ -1,0 +1,13 @@
+
+services:
+  khmerhistory:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: khmerhistory
+
+    restart: unless-stopped
+
+    ports:
+      - "127.0.0.1:3333:80"
